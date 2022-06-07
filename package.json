@@ -15,7 +15,8 @@
     "prettier": "--config .prettierrc --write",
     "test": "jest",
     "test:watch": "jest --watch",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "release": "release-it"
   },
   "husky": {
     "hooks": {
@@ -68,7 +69,8 @@
     "redux-devtools-instrument": "^1.9.6",
     "redux-logger": "^3.0.6",
     "redux-persist-node-storage": "^1.0.2",
-    "release": "^6.1.0"
+    "release": "^6.1.0",
+    "release-it": "^15.0.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
