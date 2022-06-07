@@ -74,7 +74,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
-    "@react-native-community/netinfo": "8.2.0",
     "redux-persist": "^4.6.0"
   },
   "peerDependencies": {
