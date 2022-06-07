@@ -1,5 +1,6 @@
 /* eslint no-underscore-dangle: 0 */
-import { AppState, NetInfo } from 'react-native'; // eslint-disable-line
+import { AppState } from 'react-native';
+import NetInfo from "@react-native-community/netinfo";
 import LegacyDetectNetwork from './detectNetwork.native.legacy';
 
 class DetectNetwork {
@@ -121,7 +122,7 @@ class DetectNetwork {
     });
     AppState.addEventListener('change', async () => {
       this._setShouldInitUpdateReach(false);
-      const connectionInfo = await NetInfo.getConnectionInfo();
+      const connectionInfo = await NetInfo.fetch();
       this._update(connectionInfo.type);
     });
   }
