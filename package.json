@@ -9,7 +9,7 @@
     "flow:start": "flow server",
     "flow:stop": "flow stop",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
-    "lint": "eslint src/",
+    "lint": "eslint --fix src/",
     "prepublishOnly": "npm run lint && npm run flow && npm run test && npm run build",
     "eslint": "eslint src --fix",
     "prettier": "--config .prettierrc --write",
@@ -72,6 +72,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
+    "@react-native-community/netinfo": "8.2.0",
     "redux-persist": "^4.6.0"
   },
   "peerDependencies": {
